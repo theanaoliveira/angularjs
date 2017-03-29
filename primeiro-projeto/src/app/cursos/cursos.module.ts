@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CursosComponent } from './cursos.component';
 
@@ -6,6 +6,7 @@ import { CursosComponent } from './cursos.component';
   imports: [
     CommonModule
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   declarations: [CursosComponent],
   exports:[
     CursosComponent
